@@ -22,7 +22,7 @@ SerialPortLib.list(function(err, ports) {
 		connectButton.onclick = function() {
 			var port = portsPath.options[portsPath.selectedIndex].value;
 			var baudrateElement = document.getElementById("baudrate");
-			var baudrate = baudrateElement.options[baudrateElement.selectedIndex].value;
+			var baudrate = 115200;
 			connect(port, baudrate);
 		};
 	}
@@ -55,7 +55,7 @@ function connect(port, baudrate) {
 
 	sp.on("data", function(data) {
 		output.textContent += data.toString();
-		chrome.runtime.sendMessage('mmajeelodhfijncfbkadbofpefcebike', {data: data.toString()});
+		chrome.runtime.sendMessage('jmeakhpkgniejdchmiinebcmkdilpina', {data: data.toString()});
 	});
 
 	function send() {
