@@ -21,7 +21,7 @@ SerialPortLib.list(function(err, ports) {
 		var connectButton = document.getElementById("connect");
 		connectButton.onclick = function() {
 			var port = portsPath.options[portsPath.selectedIndex].value;
-			var baudrateElement = document.getElementById("baudrate");
+			// var baudrateElement = document.getElementById("baudrate");
 			var baudrate = 115200;
 			connect(port, baudrate);
 		};
