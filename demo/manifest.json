@@ -4,7 +4,7 @@
   "name": "Serial Monitor",
   "description": "Monitors your serial port and allows you to read and write to it like you could with Arduino's IDE.",
 
-  "version": "1.0.6",
+  "version": "1.0.7",
 
   "app": {
     "background": {
