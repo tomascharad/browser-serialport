@@ -55,7 +55,7 @@ function connect(port, baudrate) {
 
 	sp.on("data", function(data) {
 		output.textContent += data.toString();
-		chrome.runtime.sendMessage('jmlkienhpjembdolnhmfeoeongdjoiic', {data: data.toString()});
+		chrome.runtime.sendMessage('mmajeelodhfijncfbkadbofpefcebike', {data: data.toString()});
 	});
 
 	function send() {
